@@ -51,7 +51,11 @@ dependencies {
     implementation(libs.room.runtime)
     implementation(libs.material)
     implementation(libs.viewpager2)
+    implementation(libs.glide)
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
     annotationProcessor(libs.androidx.room.compiler)
+    annotationProcessor("com.github.bumptech.glide:compiler:4.16.0")
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)

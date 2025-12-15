@@ -15,6 +15,7 @@ import androidx.core.view.GravityCompat;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.viewpager2.widget.ViewPager2;
 
 import com.google.android.material.navigation.NavigationView;
 import com.pat.ulampinoy.User.SessionManager;
@@ -24,6 +25,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     DrawerLayout drawerLayout;
 
     SessionManager sessionManager;
+
+    NavigationView navigationView;
+
+    ViewPager2 viewPager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,9 +68,38 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         toggle.syncState();
 
+        getSupportActionBar().setTitle("");
+
+        viewPager = findViewById(R.id.view_pager);
+
+        MainViewPagerAdapter adapter = new MainViewPagerAdapter(this);
+
+        viewPager.setAdapter(adapter);
+
+        viewPager.setUserInputEnabled(false);
+
+        viewPager.registerOnPageChangeCallback(new ViewPager2.OnPageChangeCallback() {
+
+            @Override
+            public void onPageSelected(int position) {
+
+                super.onPageSelected(position);
+
+                switch (position) {
+                    case 0:
+                        navigationView.setCheckedItem(R.id.nav_home);
+                        break;
+                }
+
+            }
+
+        });
+
         if (savedInstanceState == null) {
 
             navigationView.setCheckedItem(R.id.nav_home);
+
+            viewPager.setCurrentItem(0, false);
 
         }
 
@@ -77,6 +111,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         int id = item.getItemId();
 
         if (id == R.id.nav_home) {
+
+            viewPager.setCurrentItem(0);
 
         }
         else if (id == R.id.nav_logout) {
