@@ -95,6 +95,8 @@ public class LoginActivity extends AppCompatActivity {
 
                     sessionManager.createLoginSession(email);
 
+                    startActivity(new Intent(LoginActivity.this, MainActivity.class));
+
                     finish();
 
                 } else {
