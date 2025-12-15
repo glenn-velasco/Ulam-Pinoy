@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <color name="screen_background">#FFFFFF</color>
+    <color name="input_field_background">#F5F5F5</color>
+    <color name="text_primary">#121212</color>
+    <color name="text_secondary">#546E7A</color>
+    <color name="text_hint">#78909C</color>
+    <color name="text_button_filled">#FFFFFF</color>
+    <color name="brand_primary">#2E7D32</color>
+    <color name="brand_error">#B00020</color>
 </resources>
