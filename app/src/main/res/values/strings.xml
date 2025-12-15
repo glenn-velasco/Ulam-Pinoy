@@ -1,3 +1,21 @@
 <resources>
     <string name="app_name">Ulam Pinoy</string>
+    <string name="welcome_back">WELCOME BACK</string>
+    <string name="please_sign_in_to_continue">Please sign in to continue.</string>
+    <string name="email_address">Email Address</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="login">Login</string>
+    <string name="don_t_have_an_account_sign_up">Don\'t have an account? Sign Up</string>
+    <string name="create_account">CREATE ACCOUNT</string>
+    <string name="join_us_to_discover_authentic_recipes">Join us to discover authentic recipes.</string>
+    <string name="ulam_pinoy">ULAM PINOY</string>
+    <string name="recipes">RECIPES</string>
+    <string name="your_ultimate_guide_to_authentic_home_cooked_filipino_meals">Your ultimate guide to authentic home-cooked Filipino meals.</string>
+    <string name="username">Username</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="already_have_an_account_login">Already have an account? Login</string>
+    <string name="discover_authentic_recipes">Discover authentic recipes</string>
+    <string name="navigation_drawer_open">Open</string>
+    <string name="navigation_drawer_close">Close</string>
 </resources>

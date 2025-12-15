@@ -1,13 +1,13 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-
     <style name="Base.Theme.UlamPinoy" parent="Theme.Material3.DayNight.NoActionBar">
-         <item name="colorPrimary">@color/black</item>
+        <item name="colorPrimary">@color/brand_primary</item>
+        <item name="android:statusBarColor">@color/screen_background</item>
     </style>
 
     <style name="Theme.UlamPinoy" parent="Base.Theme.UlamPinoy" />
 
     <style name="Theme.App.Starting" parent="Theme.SplashScreen">
-        <item name="windowSplashScreenBackground">@color/ashy_gray</item>
+        <item name="windowSplashScreenBackground">@color/screen_background</item>
     </style>
 
 </resources>

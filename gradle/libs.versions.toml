@@ -8,9 +8,13 @@ appcompat = "1.7.1"
 material = "1.13.0"
 activity = "1.12.1"
 constraintlayout = "2.2.1"
+materialVersion = "1.14.0"
+roomCompiler = "2.8.4"
 roomRuntimeAndroid = "2.8.4"
+viewpager2 = "1.1.0"
 
 [libraries]
+androidx-room-compiler = { module = "androidx.room:room-compiler", version.ref = "roomCompiler" }
 core-splashscreen = { module = "androidx.core:core-splashscreen", version.ref = "coreSplashscreen" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
@@ -21,6 +25,7 @@ activity = { group = "androidx.activity", name = "activity", version.ref = "acti
 constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
 room-runtime = { module = "androidx.room:room-runtime", version.ref = "roomRuntimeAndroid" }
 room-runtime-android = { module = "androidx.room:room-runtime-android", version.ref = "roomRuntimeAndroid" }
+viewpager2 = { module = "androidx.viewpager2:viewpager2", version.ref = "viewpager2" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

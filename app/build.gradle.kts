@@ -14,6 +14,12 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments += mapOf("room.schemaLocation" to "$projectDir/schemas")
+            }
+        }
     }
 
     buildTypes {
@@ -29,6 +35,10 @@ android {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
     }
+
+    buildFeatures {
+        viewBinding = true
+    }
 }
 
 dependencies {
@@ -39,7 +49,9 @@ dependencies {
     implementation(libs.constraintlayout)
     implementation(libs.core.splashscreen)
     implementation(libs.room.runtime)
-    annotationProcessor(libs.room.runtime.android)
+    implementation(libs.material)
+    implementation(libs.viewpager2)
+    annotationProcessor(libs.androidx.room.compiler)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
